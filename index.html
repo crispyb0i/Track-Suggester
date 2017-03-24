@@ -9,7 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Epicodus Track Suggester</h1>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1>Epicodus Track Suggester</h1>
+        </div>
+      </div>
       <img class="titlePic" src="img/laptop.jpeg">
       <h2 class="mainh2">Take this quick questionaire to discover which Epicodus track you should take!</h2>
       <form id="form">
@@ -79,6 +83,49 @@
         <h2>Java/Android Track!</h2>
         <img src="img/java.png" alt="Ruby"/>
         <p>Java is a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
+      </div>
+      <div id="buttonHide">
+        <Button id="resultButton" class="btn btn-primary clickMe">Click here to view your results</button>
+      </div>
+      <div class="results">
+          <Button id="result2Button" class="btn btn-primary clickMe">Click here to hide your results</button>
+          <p>Each answer scores +1 point towards their respective track. Scores of 3 and up will show up as your result. If there are no scores of 3 or more, you will get the Ruby result.</p>
+          <h3>ANSWER KEY</h3>
+        <p class="panswer">Do you prefer front-end or back-end programming?</p>
+        <ul class="answer">
+          <li>front-end (CSS)</li>
+          <li>back-end (Ruby,Java)</li>
+        </ul>
+        <p class="panswer">What Platform/field?</p>
+        <ul class="answer">
+          <li>I want to work for a big tech company (PHP)</li>
+          <li>Web (CSS/Ruby)</li>
+          <li>Mobile (Java)</li>
+        </ul>
+        <p class="panswer">What is your favorite company?</p>
+        <ul class="answer">
+          <li>Amazon (Java)</li>
+          <li>Tesla (PHP)</li>
+          <li>Ebay (CSS)</li>
+          <li>Twitter (Ruby)</li>
+        </ul>
+        <p class="panswer">Do you like taking the time to make things look nice and pretty?</p>
+        <ul class="answer">
+          <li>Absolutely! (CSS)</li>
+          <li>No, not really... (PHP, Java)</li>
+        </ul>
+        <p class="panswer">Which do you like playing with better, legos or playdough?</p>
+        <ul class="answer">
+          <li>Legos (PHP)</li>
+          <li>Playdough (Ruby)</li>
+        </ul>
+        <h3 class="score">Here is what you scored:</h3>
+        <ul class="answer">
+          <li>CSS: <span id="CSS"></span></li>
+          <li>Java: <span id="Java"></span></li>
+          <li>PHP: <span id="PHP"></span></li>
+          <li>Ruby: <span id="Ruby"></span></li>
+        </ul>
       </div>
     </div>
   </body>

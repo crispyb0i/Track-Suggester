@@ -1,24 +1,16 @@
 h1 {
   text-align: center;
+  font-size: 30px;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   background-color: pink;
-}
-
-.mainh2 {
-  background-color: white;
 }
 
 h3 {
   text-align: center;
-}
-
-#button {
-  margin-top: 25px;
-  margin-bottom: 30px;
 }
 
 select {
@@ -26,11 +18,19 @@ select {
 }
 
 img{
-  width: 40%;
+  width: 30%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+#button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 #pintro {
@@ -38,7 +38,7 @@ img{
 }
 
 .titlePic {
-  width:60%;
+  width:80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -66,7 +66,50 @@ img{
 .javaDescription {
   display: none;
 }
-/*#results {
+.mainh2 {
+  background-color: white;
+}
+
+.answer {
+  text-align: left;
+}
+
+.panswer {
+  background-color: turquoise;
+}
+
+.clickMe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+ul {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.results {
   display: none;
   text-align: center;
-}*/
+}
+
+#buttonHide {
+  display: none;
+}
+
+#resultButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+#buttonShow {
+  display: none;
+}
+
+.panswer {
+  font-weight: bold;
+}

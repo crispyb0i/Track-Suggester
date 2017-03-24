@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("#form").submit(function(event){
 
-  $(".intro, .rubyDescription, .phpDescription, .cssDescription, .javaDescription").hide();
+  $(".intro, .rubyDescription, .phpDescription, .cssDescription, .javaDescription, .results").hide();
 
   console.log("hello hi")
 
@@ -73,11 +73,21 @@ if(cssCount >= 3){
   $(".rubyDescription").show();
 }
 
-console.log(cssCount)
-console.log(phpCount)
-console.log(javaCount)
-console.log(rubyCount)
+$("#buttonHide").show();
+
+$("#CSS").text(cssCount);
+$("#Ruby").text(rubyCount);
+$("#Java").text(javaCount);
+$("#PHP").text(phpCount);
 
   event.preventDefault();
+  })
+  $("#buttonHide").click(function(){
+    $("#buttonHide").hide();
+    $(".results").show();
+  })
+  $("#result2Button").click(function(){
+    $(".results").hide();
+    $("#buttonHide").show();
   })
 });

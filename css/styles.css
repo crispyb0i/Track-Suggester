@@ -16,15 +16,23 @@ select {
   margin-bottom: 10px;
 }
 
-.name {
-  margin-bottom: 30px;
-}
-
 img{
-  width: 60%;
+  width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.titlePic {
+  width:60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  margin-bottom: 30px;
 }
 
 .qtext {

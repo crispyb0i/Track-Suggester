@@ -60,7 +60,6 @@ if($("#toy").val()==='Legos'){
 $("#results").show();
 $(".intro").show();
 
-
 if(cssCount >= 3){
   $(".cssDescription").show();
 }if(javaCount >= 3){
@@ -73,6 +72,7 @@ if(cssCount >= 3){
   $(".rubyDescription").show();
 }
 
+//Code to implement counters into HTML
 $("#buttonHide").show();
 
 $("#CSS").text(cssCount);
@@ -84,10 +84,10 @@ $("#PHP").text(phpCount);
   })
   $("#buttonHide").click(function(){
     $("#buttonHide").hide();
-    $(".results").show();
+    $(".results").fadeIn();
   })
   $("#result2Button").click(function(){
-    $(".results").hide();
+    $(".results").fadeOut();
     $("#buttonHide").show();
   })
 });

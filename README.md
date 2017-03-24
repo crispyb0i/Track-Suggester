@@ -7,7 +7,7 @@
 
 ## Description
 
-_{This is my website that I created for Epicodus' second Friday independent project. It has a small questionaire that you fill out that you fill out. Once you fill out the questionaire and submit it, your results of which track you should take will appear. Furthermore, there is a "click here to view your results" button on the bottom of the page that you can click to view your results in detail.}_
+_{This is my website that I created for Epicodus' second Friday independent project. It has a small questionaire that you fill out. Once you fill out the questionaire and submit it, your results of which track you should take will appear. Furthermore, there is a "click here to view your results" button on the bottom of the page that you can click to view your results in greater detail.}_
 
 ## Setup/Installation Requirements
 

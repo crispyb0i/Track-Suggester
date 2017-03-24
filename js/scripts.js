@@ -1,7 +1,26 @@
 $(document).ready(function(){
   $("#form").submit(function(event){
     // $(".equilateral, .isosceles, .scalene, .not").hide()
-  var name = $(".name").val();
+    $('#form').formValidation({
+           framework: 'bootstrap',
+           icon: {
+               valid: 'glyphicon glyphicon-ok',
+               invalid: 'glyphicon glyphicon-remove',
+               validating: 'glyphicon glyphicon-refresh'
+           },
+           fields: {
+               fullName: {
+                   validators: {
+                       notEmpty: {
+                           message: 'The full name is required'
+                       }
+                   }
+               }
+           }
+       });
+   });
+
+  var name = $(".fullName").val();
 
   var cssCount = 0;
   var rubyCount = 0;

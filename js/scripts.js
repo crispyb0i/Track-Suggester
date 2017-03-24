@@ -1,8 +1,13 @@
 $(document).ready(function(){
   $("#form").submit(function(event){
-    // $(".equilateral, .isosceles, .scalene, .not").hide()
 
-  var name = $(".fullName").val();
+  $(".intro, .rubyDescription, .phpDescription, .cssDescription, .javaDescription").hide();
+
+  console.log("hello hi")
+
+  var name = $(".name").val();
+
+  $("#nameInsert").text(name);
 
   var cssCount = 0;
   var rubyCount = 0;
@@ -50,12 +55,28 @@ if($("#toy").val()==='Legos'){
 }if($("#toy").val()==='Playdough'){
   rubyCount += 1
 }
-console.log(javaCount)
+//track counter display code
+
+$("#results").show();
+$(".intro").show();
+
+
+if(cssCount >= 3){
+  $(".cssDescription").show();
+}if(javaCount >= 3){
+  $(".javaDescription").show();
+}if(phpCount >= 3){
+  $(".phpDescription").show();
+}if(rubyCount >= 3){
+  $(".rubyDescription").show();
+}if(cssCount < 3 && javaCount < 3 && phpCount < 3 && rubyCount < 3){
+  $(".rubyDescription").show();
+}
+
 console.log(cssCount)
 console.log(phpCount)
+console.log(javaCount)
 console.log(rubyCount)
-
-
 
   event.preventDefault();
   })

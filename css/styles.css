@@ -5,11 +5,20 @@ h1 {
 h2 {
   text-align: center;
   margin-bottom: 30px;
+  background-color: pink;
 }
 
-button {
+.mainh2 {
+  background-color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+#button {
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 select {
@@ -22,6 +31,10 @@ img{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+#pintro {
+  margin-top: 20px;
 }
 
 .titlePic {
@@ -38,3 +51,22 @@ img{
 .qtext {
   font-weight: bold;
 }
+.intro {
+  display: none;
+}
+.rubyDescription {
+  display: none;
+}
+.phpDescription {
+  display: none;
+}
+.cssDescription {
+  display: none;
+}
+.javaDescription {
+  display: none;
+}
+/*#results {
+  display: none;
+  text-align: center;
+}*/

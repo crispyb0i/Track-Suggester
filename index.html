@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.2.0.js"></script>
+        <script src="js/scripts.js"></script>
+    <title>Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Track Suggester</h1>
+      <h2>Take this quick questionaire to discover which Epicodus track you should take!</h2>
+      <form id="form">
+        <div class="name1">
+          <label for="name">Full Name:</label>
+          <input id="name" class="name" type="text">
+        </div>
+        <div class="questions">
+          <p class="qtext">Do you prefer front-end or back-end programming?</p>
+          <select class="form-control" id="frontBack">
+            <option>Front-end</option>
+            <option>Back-end</option>
+          </select>
+          <p class="qtext">What Platform/field?</p>
+          <select class="form-control" id="field">
+            <option>I want to work for a big tech company</option>
+            <option>Web</option>
+            <option>Mobile</option>
+          </select>
+          <p class="qtext">What is your favorite company?</p>
+          <select class="form-control" id="company">
+            <option>Amazon</option>
+            <option>Ebay</option>
+            <option>Tesla</option>
+            <option>Twitter</option>
+          </select>
+          <p class="qtext">Do you like taking the time to make things look nice and pretty?</p>
+          <select class="form-control" id="design">
+            <option>Absolutely!</option>
+            <option>No, not really...</option>
+          </select>
+          <p class="qtext">Which do you like playing with better, legos or playdough?</p>
+          <select class="form-control" id="toy">
+            <option>Legos</option>
+            <option>Playdough</option>
+          </select>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
